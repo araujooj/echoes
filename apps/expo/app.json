@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Echoes",
+    "slug": "echoes",
+    "version": "1.0.0",
+    "scheme": "echoes",
+    "platforms": ["ios", "android"],
+    "ios": {
+      "bundleIdentifier": "com.araujooj.echoes"
+    }
+  }
+}

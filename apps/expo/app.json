@@ -4,9 +4,17 @@
     "slug": "echoes",
     "version": "1.0.0",
     "scheme": "echoes",
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "ios": {
       "bundleIdentifier": "com.araujooj.echoes"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c019eb7e-fc1e-4624-86c5-5fa720e34953"
+      }
     }
   }
 }

@@ -3,10 +3,17 @@
   "name": "app",
   "main": "index.ts",
   "dependencies": {
+    "@bounceapp/lottie": "^0.1.2",
+    "@expo/vector-icons": "^13.0.0",
+    "@gorhom/portal": "^1.0.14",
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/native-stack": "^6.5.0",
+    "lottie-react": "^2.4.0",
+    "lottie-react-native": "^5.1.6",
+    "lottie-web": "^5.12.0",
     "moti": "latest",
     "nativewind": "2.0.9",
+    "react-lottie": "^1.2.3",
     "solito": "3.0.0"
   },
   "sideEffects": false

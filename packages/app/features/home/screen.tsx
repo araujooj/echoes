@@ -1,23 +1,42 @@
 import { H1, P, Text } from 'app/design/typography'
-import { Stack } from 'app/design/layout'
+import { Row, Stack } from 'app/design/layout'
 import { View } from 'app/design/view'
 import { Button } from 'app/design/button'
+import { Waves } from 'app/design/lottie'
+import { Icon } from 'app/design/icon'
 
 export function HomeScreen() {
   return (
-    <View className="bg-brand flex-1 items-center justify-center p-3">
-      <H1 className="text-white">Welcome to Echoes</H1>
-      <View className="max-w-xl">
-        <P className="text-center">
-          Transform your audio into notes powered by AI.
-        </P>
-      </View>
-      <View className="h-[32px]" />
-      <Stack className="w-3/4 max-w-sm space-y-4">
-        <Button text="Login" />
-        <Text className="text-center text-white">Or</Text>
-        <Button text="Signup" variant="secondary" />
-      </Stack>
-    </View>
+    <>
+      <Row className="flex-1 items-center">
+        <View className="mr-auto p-6">
+          <H1 className="text-white">
+            Welcome to <Text className="text-accent">Echoes</Text>
+          </H1>
+          <View className="max-w-lg">
+            <P className="text-left">
+              Step into the new era of productivity with Echoes. Harness the
+              power of your voice, transform your spoken words into organized
+              notes, and watch as your thoughts materialize in Notion.
+            </P>
+            <P>
+              {' '}
+              Join us, and unlock the potential of your{' '}
+              <Text className="font-bold">voice.</Text>
+            </P>
+          </View>
+          <View className="h-[32px]" />
+          <Row className="flex-wrap space-x-4">
+            <Button text="Login" />
+            <Button text="Signup" variant="secondary" />
+          </Row>
+        </View>
+        <Waves />
+      </Row>
+      {/* <Stack className="flex w-screen justify-center">
+        <Icon name="chevron-down" className="animate-bounce transition-all" />
+        <P className="font-medium">Scroll to know more</P>
+      </Stack> */}
+    </>
   )
 }

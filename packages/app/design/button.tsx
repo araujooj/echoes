@@ -24,7 +24,7 @@ export const Button = ({
     <Pressable
       className={`${
         className || ''
-      } text-brand flex min-w-full flex-row items-center justify-center gap-2 rounded border px-4 py-2 text-sm font-medium transition-all duration-200 hover:translate-y-[-3px] focus:outline-none ${
+      } text-brand flex flex-1 flex-row items-center justify-center gap-2 rounded border px-4 py-2 text-sm font-medium transition-all duration-200 hover:translate-y-[-3px] focus:outline-none ${
         variant === 'primary'
           ? 'bg-primary hover:shadow-primary-button'
           : 'bg-secondary'
